@@ -42,6 +42,7 @@ const buttonContainer = document.createElement('div');
 buttonContainer.id = 'buttonContainer';
 swatchSection.appendChild(buttonContainer)
 
+let store;
 
 //set the colors in swatch
 function swatch(cell) {
@@ -54,7 +55,6 @@ function swatch(cell) {
   })
 }
 
-let store;
 
 let mouse = false;
 
@@ -63,11 +63,6 @@ function canvas(cell) {
   cell.addEventListener("click", function () {
     cell.style.backgroundColor = store
   })
-  // cell.addEventListener('mouseover', function () {
-  //   if (mouse) {
-  //     cell.style.backgroundColor = store;
-  //   }
-  // })
 }
 
 
