@@ -54,6 +54,8 @@ function swatch(cell) {
   })
 }
 
+let store;
+
 let mouse = false;
 
 //color
@@ -86,7 +88,7 @@ clear.innerHTML = 'CLEAR';
 clear.addEventListener("click", backToWhite);
 
 function backToWhite(event) {
-  const cells = document.querySelectorAll('#canvas .cell');
+  const cells = document.querySelectorAll('#canvasSection .cell');
   for (let i = 0; i < cells.length - 1; i++) {
     changeBgColor('#FFF', cells[i]);
   }

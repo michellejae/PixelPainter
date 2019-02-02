@@ -77,9 +77,13 @@ body{
 #swatchHeader{
   font-size: 15px;
   order: 1;
+  font-family: Arial;
+  margin-bottom: 5px;
 }
 #canvasHeader{
   font-size: 15px;
+  font-family: Arial;
+  margin-bottom: 5px;
 
 }
 /* #ERASE{
